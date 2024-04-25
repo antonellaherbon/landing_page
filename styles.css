@@ -2,11 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poopins', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(10,10,71,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
 }
 
 nav{
@@ -14,17 +21,15 @@ nav{
     align-items: center;
     justify-content: space-around;
     height: 70px;
-    background-color: #ff91a4 ;
     position: sticky;
     top: 0;
     z-index: 1000;
 }  
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2{
+    font-size: 45px;
 }
+
 
 .item{
     position: relative;
@@ -46,6 +51,8 @@ nav{
     transition: 0.3s;
 }
 
+
+
 .item:hover{
     color: #ffffff;
 }
@@ -55,6 +62,9 @@ nav{
     
 }
 
+h1{
+    font-size: 45px;
+}
 
 ul {
     list-style: none;
@@ -66,7 +76,7 @@ li {
 }
 
 .cont-nombre{
-    margin-top: 2%;
+    height: 80vh;
 }
 
 .nombre {
@@ -78,8 +88,8 @@ li {
 }
 
 .logo {
-    height: 30px; 
-    width: 30px;  
+    height: 50px; 
+    width: 0px;  
     padding: 1px;
 }
 
@@ -90,20 +100,11 @@ li {
 }
 
 .experiencia{
-    text-decoration: underline;
-}
-
-.cont-proyectos{
-    display: flex;
-    margin-top: 50px;
-}
-
-.proyectos{
-    text-decoration: underline;
+    margin-left: 35px;
 }
 
 .cont-lenguajes{
-    padding: 5%;
+    /* padding: 5%; */
     display: flex;
     justify-content: space-around;
 }
@@ -170,23 +171,40 @@ li {
     }
 
 .card{
-    background-color: #ff91a4;
-}
-
-.btn{
-    background-color: #f8f9fa   ;
-}
-
-hr.separador {
-    margin: 40px auto; 
-    height: 2px;
-    background-color: #e91e63;
-    border: none;
-    width: 70%;
+    background-color: transparent; 
 }
 
 section{
     scroll-margin-top: 90px; 
+    margin-bottom: 100px;
 }
 
+.botoninicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey; 
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botoninicio:hover {
+    background-color: #808090;
+    color: white;
+}
+
+.botoninicio:active {
+    transform: translateY(1px); /* Efecto de hundimiento al hacer clic */
+}
+
+.titulo{
+    margin-left: 15px;
+    font-style: italic;
+}
 

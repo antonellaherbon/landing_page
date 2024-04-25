@@ -1,118 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-    <nav>
+    <nav id="header">
         <a class="item" href="#Inicio">Inicio</a>
+        <a class="item" href="#sobreMi">Sobre Mi</a>
         <a class="item" href="#educacion">Educación</a>
-        <a class="item" href="#proyectos">Proyectos</a>
+        <a class="item" href="#Proyectos">Proyectos</a>
     </nav>
 
     <section id="Inicio">
-        <div class="container cont-nombre" >
+        <div class="container d-flex justify-content-center align-items-center cont-nombre">
             <div class="row">
-                <div class="col-md-6" >
+                <div class="col-md-6 animate__animated animate__fadeInLeft">
                     <h1 class="nombre">Antonella Herbon</h1>
-                    <div class="logos">
-                        <img class="logo" src="./assets/linkedin.png" alt="linked in">
-                        <img class="logo" src="./assets/github.png" alt="github">
+                    <p class="titulo">Front End Developer</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="botoninicio me-2" href="https://github.com/antonellaherbon">GitHub</a>
+                        <a class="botoninicio me-2" href="https://www.linkedin.com/in/antonella-herbon-1b6458282/">Linkedin</a>
+                        <a class="botoninicio" href="./Curriculum Vitae Antonella Herbon.pdf"
+                            download="Curriculum Vitae Antonella Herbon">Descargar CV</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./assets/perfil.jpg" alt="persona">
+                <div class="col-md-6 animate__animated animate__fadeInRight">
+                    <img src="./assets/perfil.jpg" alt="persona" />
                 </div>
             </div>
         </div>
-    
 
-        <div class="container cont-lenguajes">
-            <img style="width: 45px; height: 45px;" src="./assets/html.png" alt="HTML">
-            <img style="width: 50px; height: 50px;" src="./assets/css.png" alt="CSS">
-            <img style="width: 70px; height: 50px;" src="./assets/javascript-39395.png" alt="JAVASCRIPT">
-            <img style="width: 50px; height: 50px;" src="./assets/react.png" alt="REACT">
-            <img style="width: 50px; height: 50px;" src="./assets/java.png" alt="JAVA">
-            <img style="width: 60px; height: 50px;" src="./assets/python.png" alt="PYTHON">
-            <img style="width: 50px; height: 45px;" src="./assets/bootstrap-5-logo-icon.png" alt="bootstrap">
+        <div class="logos">
+
+            <div class="container cont-lenguajes" data-aos="zoom-in-up">
+                <img style="width: 45px; height: 45px" src="./assets/html.png" alt="HTML" />
+                <img style="width: 50px; height: 50px" src="./assets/css.png" alt="CSS" />
+                <img style="width: 70px; height: 50px" src="./assets/javascript-39395.png" alt="JAVASCRIPT" />
+                <img style="width: 50px; height: 50px" src="./assets/react.png" alt="REACT" />
+                <img style="width: 50px; height: 50px" src="./assets/java.png" alt="JAVA" />
+                <img style="width: 60px; height: 50px" src="./assets/python.png" alt="PYTHON" />
+                <img style="width: 50px; height: 45px" src="./assets/bootstrap-5-logo-icon.png" alt="bootstrap" />
+            </div>
         </div>
-        <hr class="separador">
     </section>
 
+
     <section id="educacion">
-        <div class="container cont-experiencia" >
+        <div class="container d-flex justify-content-center align-items-center cont-experiencia" data-aos="zoom-in-up">
             <div class="row">
-                <div>
-                    <h1 class="experiencia">Educación</h1>
+                <h2 class="experiencia">Educación</h2>
+                <div class="mt-3">
                     <div class="lineatemp">
                         <div class="fila">
-                            <div class="disco"><div></div></div>
+                            <div class="disco">
+                                <div></div>
+                            </div>
                             <div>2022-2023</div>
                             <div>Curso Desarrollo Full Stack</div>
                         </div>
                         <div class="fila">
-                            <div class="disco"><div></div></div>
+                            <div class="disco">
+                                <div></div>
+                            </div>
                             <div>2021-Actualidad</div>
-                            <div><p>Estudiante</p>
+                            <div>
+                                <p>
+                                    Estudiante de Licenciatura en gestión de Tecnología de la
+                                    Información
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr class="separador">
     </section>
 
-
-    <section id="proyectos">
-        <div class="container cont-proyectos">
-            <div class="row">
-            <h1 class="proyectos">Proyectos</h1>
-                <div class="col-md-6">
-                    <div class="card text-white mb-3 h-50">
-                        <div class="card-body d-flex flex-column flex-fill">
-                            <h5 class="card-title">Pagina Web sobre cantante</h5>
-                            <p class="card-text flex-fill">Hecha utilizando HTML y CSS.</p>
-                            <a href="https://github.com/antonellaherbon/Tini_Stoessel" target="_blank" class="btn ">Visitar Proyecto</a>
+    <section id="Proyectos">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8" data-aos="zoom-in-up">
+                <h2 class="mb-4">Proyectos</h2>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img style="height: 195px;object-fit: cover; " src="./assets/TiniPag.png" class="img-fluid rounded-start" alt="..." />
                         </div>
-                    </div>
-                    <div class="card text-white mb-3 h-50">
-                        <div class="card-body d-flex flex-column flex-fill">
-                            <h5 class="card-title">Tienda Online</h5>
-                            <p class="card-text flex-fill">Hecha utilizando HTML, CSS y JS.</p>
-                            <a href="https://github.com/antonellaherbon/tienda-online-js" target="_blank" class="btn ">Visitar Proyecto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card text-white mb-3 h-50">
-                        <div class="card-body d-flex flex-column flex-fill">
-                            <h5 class="card-title">Tienda Online de Musica</h5>
-                            <p class="card-text flex-fill">Hecha utilizando HTML, CSS, JS y REACT.</p>
-                            <a href="https://github.com/antonellaherbon/react" target="_blank" class="btn ">Visitar Proyecto</a>
-                        </div>
-                    </div>
-                    <div class="card text-white mb-3 h-50">
-                        <div class="card-body d-flex flex-column flex-fill">
-                            <h5 class="card-title">Tienda Virtual de Productos</h5>
-                            <p class="card-text flex-fill">Hecha utilizando JAVA.</p>
-                            <a href="https://github.com/antonellaherbon/tiendaJava" target="_blank" class="btn ">Visitar Proyecto</a>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Tini Stoessel Music Page</h5>
+                                <p class="card-text text-muted">
+                                    Pagina musical sobre Tini Stoessel donde se habla su
+                                    carrera, amistades y distintos discos.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Creado con HTML y CSS.</small>
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="botoninicio me-2">Ver Código</a>
+                                    <a href="#" class="botoninicio">Ver Sitio Web</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <hr class="separador">
-    
-    
-    
-    
 
+        <div class="row justify-content-center align-items-center mb-3">
+            <div class="col-md-8" data-aos="zoom-in-up">
+                <div class="card mt-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img style="height: 175px; object-fit: cover;" src="./assets/react page.png" class="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Music Store E-Commerce</h5>
+                                <p class="card-text text-muted">
+                                    E-Commerce de música donde se ven distintos discos y se
+                                    pueden filtrar por categorias.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Creado con HTML, CSS, JS y REACT.</small>
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="botoninicio me-2">Ver Código</a>
+                                    <a href="#" class="botoninicio">Ver Sitio Web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8" data-aos="zoom-in-up">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img style="height: 175px; object-fit: cover;" src="./assets/to-do-app.png" class="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">To-Do APP</h5>
+                                <p class="card-text text-muted">
+                                    Pagina de TO-DO donde se pueden listar distintas tareas y
+                                    marcar su estado.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Creado con HTML, CSS y JS</small>
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="botoninicio me-2">Ver Código</a>
+                                    <a href="#" class="botoninicio">Ver Sitio Web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8" data-aos="zoom-in-up">
+                <div class="card mt-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img style="height: 175px; object-fit: cover;" src="./assets/coffe-app.png" class="img-fluid rounded-start" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Coffe Listing APP</h5>
+                                <p class="card-text text-muted">
+                                    Pagina donde se ven distintos gustos de cafe, su cantidad de
+                                    estrellas y su stock.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">Creado con HTML, CSS, JS y REACT.</small>
+                                </p>
+                                <div class="d-flex">
+                                    <a href="#" class="botoninicio me-2">Ver Código</a>
+                                    <a href="#" class="botoninicio">Ver Sitio Web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a style="
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                margin-top: 20px;
+                " href="https://github.com/antonellaherbon">Para ver más ></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
