@@ -104,7 +104,6 @@ li {
 }
 
 .cont-lenguajes{
-    /* padding: 5%; */
     display: flex;
     justify-content: space-around;
 }
@@ -182,7 +181,7 @@ section{
 .botoninicio {
     display: inline-block;
     padding: 10px 20px;
-    background-color: grey; 
+    background-color: #FFF0E68C; 
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -200,7 +199,7 @@ section{
 }
 
 .botoninicio:active {
-    transform: translateY(1px); /* Efecto de hundimiento al hacer clic */
+    transform: translateY(1px);
 }
 
 .titulo{
@@ -208,3 +207,10 @@ section{
     font-style: italic;
 }
 
+.logoTech{
+    transition: transform 0.3s;
+}
+
+.logoTech:hover{
+    transform: scale(1.2);
+}

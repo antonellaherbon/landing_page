@@ -16,7 +16,6 @@
 
     <nav id="header">
         <a class="item" href="#Inicio">Inicio</a>
-        <a class="item" href="#sobreMi">Sobre Mi</a>
         <a class="item" href="#educacion">Educación</a>
         <a class="item" href="#Proyectos">Proyectos</a>
     </nav>
@@ -43,13 +42,14 @@
         <div class="logos">
 
             <div class="container cont-lenguajes" data-aos="zoom-in-up">
-                <img style="width: 45px; height: 45px" src="./assets/html.png" alt="HTML" />
-                <img style="width: 50px; height: 50px" src="./assets/css.png" alt="CSS" />
-                <img style="width: 70px; height: 50px" src="./assets/javascript-39395.png" alt="JAVASCRIPT" />
-                <img style="width: 50px; height: 50px" src="./assets/react.png" alt="REACT" />
-                <img style="width: 50px; height: 50px" src="./assets/java.png" alt="JAVA" />
-                <img style="width: 60px; height: 50px" src="./assets/python.png" alt="PYTHON" />
-                <img style="width: 50px; height: 45px" src="./assets/bootstrap-5-logo-icon.png" alt="bootstrap" />
+                <img class="logoTech" style="width: 45px; height: 45px" src="./assets/html.png" alt="HTML" />
+                <img class="logoTech" style="width: 50px; height: 50px" src="./assets/css.png" alt="CSS" />
+                <img class="logoTech" style="width: 70px; height: 50px" src="./assets/javascript-39395.png" alt="JAVASCRIPT" />
+                <img class="logoTech" style="width: 50px; height: 50px" src="./assets/react.png" alt="REACT" />
+                <img class="logoTech" style="width: 50px; height: 50px" src="./assets/java.png" alt="JAVA" />
+                <img class="logoTech" style="width: 60px; height: 50px" src="./assets/python.png" alt="PYTHON" />
+                <img class="logoTech" style="width: 50px; height: 45px" src="./assets/bootstrap-5-logo-icon.png" alt="bootstrap" />
+                <img class="logoTech" style="width: 50px; height: 45px;" src="./assets/google_firebase_icon-icons.com_61474.png" alt="firebase">
             </div>
         </div>
     </section>
@@ -207,8 +207,17 @@
         </div>
     </section>
 
+    <script>
+        var header = document.getElementById("header")
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0){
+                header.style.backgroundColor = '#FFF0E68C';
+            }else {
+                header.style.backgroundColor = 'transparent'; // Volver al color de fondo original
+            }
+        })
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
         AOS.init();
     </script>
